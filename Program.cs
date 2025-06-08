@@ -13,7 +13,8 @@ namespace sql
     {
         static void Main(string[] args)
         {
-
+            menuAgents menu = new menuAgents();
+            menu.start();
         }
     }
 }
