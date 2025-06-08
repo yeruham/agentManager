@@ -13,7 +13,11 @@ namespace sql
     {
         static void Main(string[] args)
         {
-
+            //Agent agent = new Agent("s", "aviva", "jerusalem", "Retired");
+            DALAgents agents = new DALAgents();
+            //agents.addAgent(agent);
+            agents.GetAllAgents();
+            agents.DeleteAgent(3);
         }
     }
 }

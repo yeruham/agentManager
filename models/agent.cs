@@ -26,6 +26,6 @@ public class Agent
 
     public void printAgent()
     {
-        Console.WriteLine($"id: {this.id}, code name: {this.codeName}, location: {this.location}, status: {this.status}, missionsCompleted: {this.missionsCompleted}.")
+        Console.WriteLine($"code name: {this.codeName}, location: {this.location}, status: {this.status}, missionsCompleted: {this.missionsCompleted}.");
     }
 }
