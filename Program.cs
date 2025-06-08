@@ -14,10 +14,14 @@ namespace sql
         static void Main(string[] args)
         {
             //Agent agent = new Agent("s", "aviva", "jerusalem", "Retired");
-            DALAgents agents = new DALAgents();
+            //DALAgents agents = new DALAgents();
             //agents.addAgent(agent);
-            agents.GetAllAgents();
-            agents.DeleteAgent(3);
+            //agents.GetAllAgents();
+            //agents.DeleteAgent(3);
+            //agents.updateLocation(1, "tel aviv");
+            menuAgents menu = new menuAgents();
+            menu.start();
+
         }
     }
 }

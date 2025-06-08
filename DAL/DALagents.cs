@@ -118,4 +118,26 @@ public class DALAgents
             this.stopConnection();
         }
     }
+
+    public void updateLocation(int agentId, string newLocation)
+    {
+        this.openConnection();
+        query = "UPDATE agents SET location = @location WHERE id = @id";
+        try
+        {
+            command = new MySqlCommand(query, connaction);
+
+            command.Parameters.AddWithValue("@location", newLocation);
+            command.Parameters.AddWithValue("@id", agentId);
+            command.ExecuteNonQuery();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Error: ", e.Message);
+        }
+        finally
+        {
+            this.stopConnection();
+        }
+    }
 }
