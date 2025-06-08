@@ -52,6 +52,7 @@ public class DALAgents
             command.Parameters.AddWithValue("@missionsCompleted", missionsCompleted);
             
             command.ExecuteNonQuery();
+            Console.WriteLine("new agent created successfully");
         }
         catch (Exception e)
         {
@@ -108,6 +109,7 @@ public class DALAgents
 
             command.Parameters.AddWithValue("@id", agentId);
             command.ExecuteNonQuery();
+            Console.WriteLine("the agent deleted");
         }
         catch (Exception e)
         {
@@ -130,6 +132,7 @@ public class DALAgents
             command.Parameters.AddWithValue("@location", newLocation);
             command.Parameters.AddWithValue("@id", agentId);
             command.ExecuteNonQuery();
+            Console.WriteLine("the location update");
         }
         catch (Exception e)
         {
